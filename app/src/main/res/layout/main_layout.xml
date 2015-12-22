@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_height="match_parent">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/btn_toggle"
+           android:text="showDraw"
+           android:onClick="onClick"
+           />
+
+       <Button
+           android:id="@+id/btn"
+           android:layout_below="@id/btn_toggle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="SnackBar"
+           android:onClick="onClick"
+           />
+       <android.support.design.widget.TextInputLayout
+           android:layout_below="@id/btn"
+           android:layout_marginTop="10dp"
+           app:errorEnabled="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <EditText
+               android:id="@+id/edit_text_email"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:inputType="textEmailAddress"
+               android:textColorHint="#000"
+               android:hint="@string/hint_email" />
+
+       </android.support.design.widget.TextInputLayout>
+
+   </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|right"
+        app:fabSize="normal"
+        android:src="@mipmap/ic_launcher"
+        android:elevation="10dp"
+
+        />
+
+</android.support.design.widget.CoordinatorLayout>

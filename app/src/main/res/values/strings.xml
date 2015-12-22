@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MaterialDesignSL</string>
+    <string name="hint_email">Email</string>
+    <string name="navigation_item_1">function1</string>
+    <string name="navigation_item_2">function2</string>
+    <string name="navigation_item_3">function3</string>
+    <string name="navigation_item_4">function4</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
